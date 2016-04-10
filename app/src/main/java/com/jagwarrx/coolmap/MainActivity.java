@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            ArrayAdapter adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,listitems);
+            ArrayAdapter adapter = new ArrayAdapter<String>(MainActivity.this,R.layout.whitetext,R.id.list_content,listitems);
             firstlistview.setAdapter(adapter);
             firstlistview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -85,5 +85,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
+        //R.layout.list_black_text,
     }
 }
+
